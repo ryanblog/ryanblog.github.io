@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>時間暫停</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ryanblog.github.io/favicon.ico?v=1658302678663">
+<link rel="stylesheet" href="https://ryanblog.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="别着急赶路，有时候停下来，是为了更好的出发。
+">
+    
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ryanblog.github.io">
+        <img src="https://ryanblog.github.io/images/avatar.png?v=1658302678663" class="site-logo">
+        <h1 class="site-title">時間暫停</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://ryanblog.github.io/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+          <a class="social-link" href="https://twitter.com/aimaiti" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      别着急赶路，有时候停下来，是为了更好的出发。
+
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ryanblog.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ryanblog.github.io/learning English/">
+                  <h2 class="post-title">学习英语第3个月</h2>
+                </a>
+                <div class="post-date">
+                  2022-07-20
+                </div>
+                <div class="post-abstract">
+                  <p>我的英语学习之路可谓坎坷。</p>
+<p>许多年以来都有学习英语的想法。大概7年前，那时候学英语主要还是在线下的英语培训机构，我在公司附近的一个新东方门店报了名，好像是3600多我记得，想着下班了以后每天都能上1小时的课，然而坚持了不到两个月就放弃了。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://ryanblog.github.io/learning English/">
+                  <div class="feature-container" style="background-image: url('https://ryanblog.github.io/post-images/learning English.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ryanblog.github.io/time/">
+                  <h2 class="post-title">把时间浪费在有意义的事情上</h2>
+                </a>
+                <div class="post-date">
+                  2022-05-21
+                </div>
+                <div class="post-abstract">
+                  <p>关注那些热门事件好像是人的本能。</p>
+<p>自从可以很方便的从互联网获取信息之后，各种信息让人眼花缭乱，加上算法的夹持，网络很容易猜懂你喜欢看什么，主动把相关信息堆在你的面前，让人忘记了时间，像是追剧一样关注着每个热门事件的进展。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://ryanblog.github.io/time/">
+                  <div class="feature-container" style="background-image: url('https://ryanblog.github.io/post-images/time.jpeg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ryanblog.github.io/story/">
+                  <h2 class="post-title">小俊的故事</h2>
+                </a>
+                <div class="post-date">
+                  2022-01-27
+                </div>
+                <div class="post-abstract">
+                  <p>小俊是公司最近新来的同事。</p>
+<p>第一次和他接触，是在海岸城拍个街访，他是那天去帮忙的几个同事中的1个，休息间大家一起喝东西的时候，我注意到他从苹果手提袋里拿出了个apple无线充电宝，那是近两天才发布的新产品。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://ryanblog.github.io/story/">
+                  <div class="feature-container" style="background-image: url('https://ryanblog.github.io/post-images/story.jpeg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ryanblog.github.io/biaoqian/">
+                  <h2 class="post-title">愚蠢的标签</h2>
+                </a>
+                <div class="post-date">
+                  2021-11-11
+                </div>
+                <div class="post-abstract">
+                  <p>贴标签是件很容易的事，可一旦给某人或某事贴上了标签，就很难摘掉了。<br>
+我们每天面临大量的信息，很难对每条信息都做深入研究，为了高效的处理这些信息，我们会对它们贴上标签分门别类，下次再遇到同类型的事儿，我们就可以轻易的做出判断，是好是坏，是对是错，如此等等。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://ryanblog.github.io/biaoqian/">
+                  <div class="feature-container" style="background-image: url('https://ryanblog.github.io/post-images/biaoqian.jpeg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ryanblog.github.io/egg/">
+                  <h2 class="post-title">土鸡蛋就是更高级</h2>
+                </a>
+                <div class="post-date">
+                  2021-10-18
+                </div>
+                <div class="post-abstract">
+                  <p>鸡蛋的主要成分是蛋白质和脂肪，对于营养而言，鸡蛋含有丰富的维生素A和维生素B，且还有人体所需的铁、磷、钙等矿物质。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://ryanblog.github.io/egg/">
+                  <div class="feature-container" style="background-image: url('https://ryanblog.github.io/post-images/egg.jpeg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ryanblog.github.io/phone/">
+                  <h2 class="post-title">逐渐陌生的世界</h2>
+                </a>
+                <div class="post-date">
+                  2021-10-10
+                </div>
+                <div class="post-abstract">
+                  <p>国庆假期跟小宇一家三口去了南昆山，那是一间大山深处的民宿，小朋友们在院子里的游泳池玩水，楼顶的露天阳台格外舒适，我们每晚都上去吃零食、喝酒、吹牛聊天。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://ryanblog.github.io/phone/">
+                  <div class="feature-container" style="background-image: url('https://tva1.sinaimg.cn/large/008i3skNgy1gvcps2etutj60rs0iijtv02.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ryanblog.github.io/experience/">
+                  <h2 class="post-title">因为你没经历过他的人生</h2>
+                </a>
+                <div class="post-date">
+                  2020-10-18
+                </div>
+                <div class="post-abstract">
+                  <p>上海比甘肃富有，于是上海人更有优越感;</p>
+<p>奔驰宝马比尼桑丰田贵，于是前者更值得炫耀;</p>
+<p>刘德华比周云蓬名气更大，于是前者更牛逼; ……</p>
+<p>更糟糕的是 这种让人哭笑不得的、扭曲的价值观竟然很有市场！</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://ryanblog.github.io/experience/">
+                  <div class="feature-container" style="background-image: url('https://ryanblog.github.io/post-images/experience.jpeg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ryanblog.github.io/97cm/">
+                  <h2 class="post-title">偏离自己，在91厘米之外</h2>
+                </a>
+                <div class="post-date">
+                  2019-10-13
+                </div>
+                <div class="post-abstract">
+                  <p>突然接到一个电话，对方似乎对我很熟，但我实在想不起来是谁，可他很热情，我却不好意思问他是谁，于是瞎聊，“你最近好吗？工作怎么样？家里都好吗？… …”</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://ryanblog.github.io/97cm/">
+                  <div class="feature-container" style="background-image: url('https://tva1.sinaimg.cn/large/008i3skNgy1gvcpv67b3ej60i20a0q3s02.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ryanblog.github.io/kuanrong/">
+                  <h2 class="post-title">宽容与成长</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-20
+                </div>
+                <div class="post-abstract">
+                  <p>宽容度通常是判断相机性能的重要参数之一，它是指相机的能容纳景物亮度反差的范围，宽容度越大，容纳的明暗范围也就越大，暗部不至于死黑，亮部也不至于死白，相机的性能也就越好。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://ryanblog.github.io/kuanrong/">
+                  <div class="feature-container" style="background-image: url('https://ryanblog.github.io/post-images/kuanrong.jpeg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
