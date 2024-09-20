@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ryanblog.github.io</id>
+    <title>Hui&apos;s Story</title>
+    <updated>2024-09-20T12:36:26.882Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ryanblog.github.io"/>
+    <link rel="self" href="https://ryanblog.github.io/atom.xml"/>
+    <subtitle>You must be too familiar with the world to be curious about everything.</subtitle>
+    <logo>https://ryanblog.github.io/images/avatar.png</logo>
+    <icon>https://ryanblog.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, Hui&apos;s Story</rights>
+    <entry>
+        <title type="html"><![CDATA[站在人生的十字路口]]></title>
+        <id>https://ryanblog.github.io/road/</id>
+        <link href="https://ryanblog.github.io/road/">
+        </link>
+        <updated>2023-12-12T02:11:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>深圳，南头检查站，21年前3月的某一天，在这个广场上，有个年轻人背着双肩包拖着行李箱站在这里，看上去有些迷茫和惆怅，他是因为没有边防证，从大巴上给拦下来的，就孤零零的站在这里，不知道该怎么才能进入深圳。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>深圳，南头检查站，21年前3月的某一天，在这个广场上，有个年轻人背着双肩包拖着行李箱站在这里，看上去有些迷茫和惆怅，他是因为没有边防证，从大巴上给拦下来的，就孤零零的站在这里，不知道该怎么才能进入深圳。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[不要轻易的向任何人吐露自己的真实想法]]></title>
+        <id>https://ryanblog.github.io/think/</id>
+        <link href="https://ryanblog.github.io/think/">
+        </link>
+        <updated>2023-12-12T02:03:52.000Z</updated>
+        <summary type="html"><![CDATA[<p>小刘是我多年的老同事，和他最近一次见面应该是半年前了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>小刘是我多年的老同事，和他最近一次见面应该是半年前了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[学英语一周年纪念]]></title>
+        <id>https://ryanblog.github.io/1year/</id>
+        <link href="https://ryanblog.github.io/1year/">
+        </link>
+        <updated>2023-04-09T03:36:14.000Z</updated>
+        <summary type="html"><![CDATA[<p>时间过的好快，Anki显示我已经用了整整一年了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>时间过的好快，Anki显示我已经用了整整一年了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[东西冲徒步]]></title>
+        <id>https://ryanblog.github.io/hike/</id>
+        <link href="https://ryanblog.github.io/hike/">
+        </link>
+        <updated>2023-03-19T06:37:41.000Z</updated>
+        <summary type="html"><![CDATA[<p>作为一个来了深圳许多年但从没走过东西冲，却总爱到处溜达的人来说，确实算是个遗憾了，虽然爬上去过几次东涌那个山，也走过一小段海边的石头路，但从没完整的走完过。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>作为一个来了深圳许多年但从没走过东西冲，却总爱到处溜达的人来说，确实算是个遗憾了，虽然爬上去过几次东涌那个山，也走过一小段海边的石头路，但从没完整的走完过。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何烧开那锅水？]]></title>
+        <id>https://ryanblog.github.io/water/</id>
+        <link href="https://ryanblog.github.io/water/">
+        </link>
+        <updated>2023-01-05T06:11:50.000Z</updated>
+        <summary type="html"><![CDATA[<p>还记得去年春节后不久，和几个朋友在大沙河公园喝茶，跟他们说我发现了一款有趣的学英语软件叫「多邻国」，跟打游戏似的，不知不觉就熟练了英语。现在回头看，当时顶多是觉得软件好玩儿，并不觉得它真的能帮助我掌握一门语言，但就是从那一刻起，点燃了内心深处真心想搞懂英语的那颗小火苗。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>还记得去年春节后不久，和几个朋友在大沙河公园喝茶，跟他们说我发现了一款有趣的学英语软件叫「多邻国」，跟打游戏似的，不知不觉就熟练了英语。现在回头看，当时顶多是觉得软件好玩儿，并不觉得它真的能帮助我掌握一门语言，但就是从那一刻起，点燃了内心深处真心想搞懂英语的那颗小火苗。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何在Markdown里嵌入视频？]]></title>
+        <id>https://ryanblog.github.io/DQ1W2yrLS/</id>
+        <link href="https://ryanblog.github.io/DQ1W2yrLS/">
+        </link>
+        <updated>2022-12-04T15:08:40.000Z</updated>
+        <summary type="html"><![CDATA[<p>很显然这是一个测试，如果成功的话，你将看到这个插入的视频。</p>
+<p>如果成功，我会告诉你，我是怎么做的。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>很显然这是一个测试，如果成功的话，你将看到这个插入的视频。</p>
+<p>如果成功，我会告诉你，我是怎么做的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[不要学习英语，而是通过英语学习别的东西]]></title>
+        <id>https://ryanblog.github.io/learning English/</id>
+        <link href="https://ryanblog.github.io/learning English/">
+        </link>
+        <updated>2022-07-20T06:36:15.000Z</updated>
+        <summary type="html"><![CDATA[<p>我的英语学习之路可谓坎坷。</p>
+<p>许多年以来都有学习英语的想法。大概7年前，那时候学英语主要还是在线下的英语培训机构，我在公司附近的一个新东方门店报了名，好像是3600多我记得，想着下班了以后每天都能上1小时的课，然而坚持了不到两个月就放弃了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我的英语学习之路可谓坎坷。</p>
+<p>许多年以来都有学习英语的想法。大概7年前，那时候学英语主要还是在线下的英语培训机构，我在公司附近的一个新东方门店报了名，好像是3600多我记得，想着下班了以后每天都能上1小时的课，然而坚持了不到两个月就放弃了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[把时间浪费在有意义的事情上]]></title>
+        <id>https://ryanblog.github.io/time/</id>
+        <link href="https://ryanblog.github.io/time/">
+        </link>
+        <updated>2022-05-21T10:51:34.000Z</updated>
+        <summary type="html"><![CDATA[<p>自从可以很方便的从互联网获取信息之后，各种信息让人眼花缭乱，加上算法的夹持，网络很容易猜懂你喜欢看什么，主动把相关信息堆在你的面前，让人忘记了时间，像是追剧一样关注着每个热门事件的进展。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>自从可以很方便的从互联网获取信息之后，各种信息让人眼花缭乱，加上算法的夹持，网络很容易猜懂你喜欢看什么，主动把相关信息堆在你的面前，让人忘记了时间，像是追剧一样关注着每个热门事件的进展。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小俊的故事]]></title>
+        <id>https://ryanblog.github.io/story/</id>
+        <link href="https://ryanblog.github.io/story/">
+        </link>
+        <updated>2022-01-27T15:58:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>小俊是公司最近新来的同事。</p>
+<p>第一次和他接触，是在海岸城拍个街访，他是那天去帮忙的几个同事中的1个，休息间大家一起喝东西的时候，我注意到他从苹果手提袋里拿出了个apple无线充电宝，那是近两天才发布的新产品。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>小俊是公司最近新来的同事。</p>
+<p>第一次和他接触，是在海岸城拍个街访，他是那天去帮忙的几个同事中的1个，休息间大家一起喝东西的时候，我注意到他从苹果手提袋里拿出了个apple无线充电宝，那是近两天才发布的新产品。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[愚蠢的标签]]></title>
+        <id>https://ryanblog.github.io/biaoqian/</id>
+        <link href="https://ryanblog.github.io/biaoqian/">
+        </link>
+        <updated>2021-11-11T12:57:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>贴标签是件很容易的事，可一旦给某人或某事贴上了标签，就很难摘掉了。<br>
+我们每天面临大量的信息，很难对每条信息都做深入研究，为了高效的处理这些信息，我们会对它们贴上标签分门别类，下次再遇到同类型的事儿，我们就可以轻易的做出判断，是好是坏，是对是错，如此等等。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>贴标签是件很容易的事，可一旦给某人或某事贴上了标签，就很难摘掉了。<br>
+我们每天面临大量的信息，很难对每条信息都做深入研究，为了高效的处理这些信息，我们会对它们贴上标签分门别类，下次再遇到同类型的事儿，我们就可以轻易的做出判断，是好是坏，是对是错，如此等等。</p>
+]]></content>
+    </entry>
+</feed>
