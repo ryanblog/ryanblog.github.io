@@ -4344,11 +4344,11 @@ em {
   }
   
   /* Translate Navigation Menus from Chinese to English elegantly via CSS pseudo-elements */
-  /* Translate Navigation Menus from Chinese to English elegantly via highly specific menu selectors */
-  a.menu[href="/"], a.menu[href="index.html"], a.menu[href="/index.html"] {
+  /* Translate Navigation Menus from Chinese to English elegantly via highly specific menu selectors scoped to menu-container */
+  .menu-container a[href="/"], .menu-container a[href="index.html"], .menu-container a[href="/index.html"] {
     font-size: 0 !important;
   }
-  a.menu[href="/"]::before, a.menu[href="index.html"]::before, a.menu[href="/index.html"]::before {
+  .menu-container a[href="/"]::before, .menu-container a[href="index.html"]::before, .menu-container a[href="/index.html"]::before {
     content: "Home" !important;
     font-size: 15px !important;
     letter-spacing: 0.03em !important;
@@ -4357,10 +4357,10 @@ em {
     font-weight: 500 !important;
   }
   
-  a.menu[href*="/archives"] {
+  .menu-container a[href*="/archives"] {
     font-size: 0 !important;
   }
-  a.menu[href*="/archives"]::before {
+  .menu-container a[href*="/archives"]::before {
     content: "Archives" !important;
     font-size: 15px !important;
     letter-spacing: 0.03em !important;
@@ -4369,10 +4369,10 @@ em {
     font-weight: 500 !important;
   }
   
-  a.menu[href*="/tags"] {
+  .menu-container a[href*="/tags"] {
     font-size: 0 !important;
   }
-  a.menu[href*="/tags"]::before {
+  .menu-container a[href*="/tags"]::before {
     content: "Tags" !important;
     font-size: 15px !important;
     letter-spacing: 0.03em !important;
@@ -4381,10 +4381,10 @@ em {
     font-weight: 500 !important;
   }
   
-  a.menu[href*="/about"], a.menu[href*="/post/about"] {
+  .menu-container a[href*="/about"], .menu-container a[href*="/post/about"] {
     font-size: 0 !important;
   }
-  a.menu[href*="/about"]::before, a.menu[href*="/post/about"]::before {
+  .menu-container a[href*="/about"]::before, .menu-container a[href*="/post/about"]::before {
     content: "About" !important;
     font-size: 15px !important;
     letter-spacing: 0.03em !important;
@@ -4394,56 +4394,111 @@ em {
   }
 
   /* Translate Pagination and Action Pagers */
-  .prev, [class*="prev-"] {
-    font-size: 0 !important;
+  .prev, .prev-page, [class*="prev-"] {
+    color: transparent !important;
+    position: relative !important;
+    min-width: 80px !important;
+    text-align: center !important;
   }
-  .prev::before, [class*="prev-"]::before {
-    content: "Prev" !important;
+  .prev::before, .prev-page::before, [class*="prev-"]::before {
+    content: "Previous" !important;
+    color: #f1f5f9 !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    text-align: center !important;
     font-size: 13px !important;
+    font-weight: 600 !important;
     visibility: visible !important;
-    display: inline-block !important;
   }
 
-  .next, [class*="next-"] {
-    font-size: 0 !important;
+  .next, .next-page, [class*="next-"] {
+    color: transparent !important;
+    position: relative !important;
+    min-width: 80px !important;
+    text-align: center !important;
   }
-  .next::before, [class*="next-"]::before {
+  .next::before, .next-page::before, [class*="next-"]::before {
     content: "Next" !important;
+    color: #f1f5f9 !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    text-align: center !important;
     font-size: 13px !important;
+    font-weight: 600 !important;
     visibility: visible !important;
-    display: inline-block !important;
   }
 
-  .read-more {
-    font-size: 0 !important;
+  .read-more, .post-item .read-more {
+    color: transparent !important;
+    position: relative !important;
+    min-width: 100px !important;
+    text-align: center !important;
   }
-  .read-more::before {
+  .read-more::before, .post-item .read-more::before {
     content: "Read More" !important;
+    color: #f1f5f9 !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    text-align: center !important;
     font-size: 13px !important;
+    font-weight: 600 !important;
     visibility: visible !important;
-    display: inline-block !important;
   }
 
-  /* Completely Hide Footer & Credits to remove 'Theme One, Powered by Gridea!' */
-  footer, .footer, .footer-info, .site-footer, .footer-container {
+  /* Clean attribution removal from footer while preserving custom copyright text and rest of footer info */
+  .site-footer, footer, .footer, .footer-info, .footer-container {
+    font-size: 0 !important; /* hides bare textual attributions */
+    opacity: 1 !important;
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+    padding: 16px 0 !important;
+    margin: 16px 0 0 0 !important;
+    background-color: #030708 !important;
+    background: #030708 !important;
+  }
+
+  /* Restore child texts */
+  .site-footer *, footer *, .footer *, .footer-info *, .footer-container * {
+    font-size: 13px !important;
+    color: #64748b !important;
+  }
+
+  /* Hide only Gridea and Theme One attribution links */
+  .site-footer a[href*="github.com/getgridea"],
+  .site-footer a[href*="gridea"],
+  .site-footer a[href*="kytrun/gridea-theme-one"],
+  footer a[href*="github.com/getgridea"],
+  footer a[href*="gridea"],
+  footer a[href*="kytrun/gridea-theme-one"],
+  .footer a[href*="github.com/getgridea"],
+  .footer a[href*="gridea"] {
     display: none !important;
+    width: 0 !important;
     height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
     opacity: 0 !important;
     visibility: hidden !important;
   }
   
-  /* Post Card entries styled with ultra-rich matching rgb(5, 7, 9) and thin gap values */
+  /* Post Card entries styled with ultra-rich matching rgb(5, 7, 9) and thin compact margins */
   .post-item, .post-list-item, .post, .card, article, section, .post-container, .post-item-wrapper, .post-card, .list-inside, .post-wrapper, .post-holder {
     background-color: rgb(5, 7, 9) !important;
     background: rgb(5, 7, 9) !important;
     border: none !important;
     border-color: transparent !important;
     border-radius: 8px !important;
-    padding: 24px 28px !important;
+    padding: 18px 22px !important;
     margin-top: 0px !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 8px !important;
     position: relative !important;
   }
   
@@ -4464,13 +4519,31 @@ em {
     gap: 8px !important;
   }
 
-  .py-12, .py-16, .py-20, .my-12, .my-16, .my-20 {
+  .py-12, .py-16, .py-20, .py-24, .py-32, .my-12, .my-16, .my-20, .my-24, .my-32 {
     padding-top: 4px !important;
     padding-bottom: 4px !important;
     margin-top: 4px !important;
     margin-bottom: 4px !important;
   }
 
+  /* Override tailwind stack space-y utilities to keep item gaps tight */
+  [class*="space-y-"] > * {
+    margin-top: 8px !important;
+  }
+  [class*="gap-"] {
+    gap: 8px !important;
+  }
+
+  /* Post item spec-level overrides to make sure they get shrunk */
+  .post-item.py-12, .post-item.py-16, .post-item.py-20, .post-item.py-24, .post-item.py-32 {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+  .post-item.my-12, .post-item.my-16, .post-item.my-20, .post-item.my-24, .post-item.my-32 {
+    margin-top: 0px !important;
+    margin-bottom: 8px !important;
+  }
+  
   /* High-legibility typography rules */
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
   a, .link, .post-title, .post-title a {
@@ -4501,11 +4574,15 @@ em {
     font-size: 0.75rem !important;
   }
   
-  /* Sleek minimalist general dividers and card inside borders (header borders or separate lines), replacing high-contrast lines with ultra-faint 4% opacity white */
-  .border-b, hr, .hr, .header-container, .footer-container, [class*="border-"], [class*="divide-"], .post-item *, .post-list-item * {
+  /* Sleek minimalist general dividers and card borders (inside header borders, cards, separate lines), replacing high-contrast lines with ultra-faint 4% opacity white */
+  *, ::before, ::after,
+  .border-b, hr, .hr, .header-container, .footer-container, [class*="border-"], [class*="divide-"], 
+  .post-item, .post-list-item, .post, .card, article, section, .post-container, .post-item-wrapper, .post-card, .list-inside, .post-wrapper, .post-holder {
     border-color: rgba(255, 255, 255, 0.04) !important;
     border-bottom-color: rgba(255, 255, 255, 0.04) !important;
     border-top-color: rgba(255, 255, 255, 0.04) !important;
+    border-left-color: rgba(255, 255, 255, 0.04) !important;
+    border-right-color: rgba(255, 255, 255, 0.04) !important;
   }
 
   /* Divider lines shifted downwards to the middle of the gutter between cards and colored extremely faint slate (4% white opacity) */
@@ -4513,9 +4590,9 @@ em {
     content: "" !important;
     display: block !important;
     position: absolute !important;
-    bottom: -8px !important;
-    left: 28px !important;
-    right: 28px !important;
+    bottom: -6px !important;
+    left: 22px !important;
+    right: 22px !important;
     height: 1px !important;
     background-color: rgba(255, 255, 255, 0.04) !important;
     background: rgba(255, 255, 255, 0.04) !important;
