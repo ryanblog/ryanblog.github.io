@@ -4316,108 +4316,113 @@ em {
 
 /* DOCK_MINIMAL_DARK_OVERRIDE_START */
 @media (min-width: 0px) {
-  /* Premium Minimalist Reddit-Inspired Dark Theme */
-  html, body, #app, .body, .layout, .page-container, .main-container {
-    background-color: #0b1416 !important;
-    background: #0b1416 !important;
-    color: #e5ebed !important;
+  /* Premium Minimalist Reddit-Inspired Borderless Dark Theme */
+  
+  /* Reset and cancel all shadows, glows & hard borders uniformly */
+  * {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  /* Main overall black-slate background with zero boundaries */
+  html, body, #app, .body, .layout, .page-container, .main-container, .wrapper, .container, .main, .main-content {
+    background-color: #030708 !important;
+    background: #030708 !important;
+    color: #cbd5e1 !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    border: none !important;
+    border-color: transparent !important;
   }
   
-  /* Layout Headers, Nav, Sidebar, Footers */
+  /* Headers, navigation links, and footers blend seamlessly */
   header, nav, footer, .footer, .header, .nav, .sidebar, .menu-container, .navigation, .header-container {
+    background-color: #030708 !important;
+    background: #030708 !important;
+    border: none !important;
+    border-color: transparent !important;
+  }
+  
+  /* Post Card entries and the main content body detail background is slightly lighter than the main body background */
+  .post-item, .post-list-item, .post, .card, article, section, .post-container, .post-item-wrapper, .post-card, .list-inside, .post-wrapper, .post-holder, .post-detail, .post-content, .content {
     background-color: #0b1416 !important;
     background: #0b1416 !important;
-    border-color: #1a2325 !important;
+    border: none !important;
+    border-color: transparent !important;
+    border-radius: 6px !important;
   }
   
-  /* Post Card items / list containers (overrides rogue white boxes) */
-  .post-item, .post-list-item, .post, .card, article, section, .post-container, .post-item-wrapper, .post-card, .list-inside, .post-wrapper, .post-holder {
-    background-color: #152226 !important;
-    background: #152226 !important;
-    border: 1px solid #283438 !important;
-    border-color: #283438 !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 8px !important;
-  }
-  
-  /* Post detail and main content backgrounds */
-  .post-detail, .post-content, .content, .main, .main-content {
-    background-color: #0b1416 !important;
-    background: #0b1416 !important;
-    color: #e5ebed !important;
-  }
-  
-  /* Typography rules (high-legibility soft contrast) */
+  /* High-legibility typography rules */
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
   a, .link, .post-title, .post-title a {
-    color: #f2f4f5 !important;
+    color: #f1f5f9 !important;
     text-shadow: none !important;
   }
   
   a:hover, .post-title:hover, .post-title a:hover {
-    color: #2f9bf0 !important;
+    color: #38bdf8 !important;
     text-decoration: none !important;
   }
   
   p, span, li, ul, ol, time, .date, .time, .time-tag, .post-meta, .post-info, .meta, .info, .description, .publish-info {
-    color: #a5b1b5 !important;
+    color: #94a3b8 !important;
   }
   
   .post-meta, .post-info, .meta, .date, time {
-    color: #82959b !important;
+    color: #64748b !important;
   }
   
-  /* Navigation, tags & pills */
+  /* Sub-elements, tags, categorizations, and pills */
   .tag, .tags, .category, .categories, .tag-pill, .badge, .tag-item {
-    background-color: #223035 !important;
-    color: #a5b1b5 !important;
-    border: 1px solid #2d3f44 !important;
+    background-color: #1a2e35 !important;
+    color: #94a3b8 !important;
+    border: none !important;
     border-radius: 4px !important;
     padding: 2px 8px !important;
     font-size: 0.75rem !important;
   }
   
-  /* Clean dividers */
+  /* Sleek minimalist dividers (no harsh high-contrast lines) */
   .border-b, hr, .hr, .header-container, .footer-container {
-    border-color: #1a2325 !important;
+    border-color: #111a1d !important;
   }
   
-  /* Form, search widgets and input controls */
+  /* Form inputs & search filters */
   input, textarea, select, .search-field, .search-input {
-    background-color: #152226 !important;
-    background: #152226 !important;
-    color: #f2f4f5 !important;
-    border: 1px solid #283438 !important;
+    background-color: #0b1416 !important;
+    background: #0b1416 !important;
+    color: #f1f5f9 !important;
+    border: 1px solid #111a1d !important;
     border-radius: 9999px !important;
     padding: 8px 16px !important;
     outline: none !important;
   }
   
   input::placeholder, .search-field::placeholder {
-    color: #82959b !important;
+    color: #64748b !important;
   }
   
-  /* Embedded elements & media */
+  /* Multimedia graphics */
   img, svg {
-    border-color: #283438 !important;
-    opacity: 0.92 !important;
+    border: none !important;
+    border-color: transparent !important;
+    opacity: 0.95 !important;
   }
   
-  /* Rich text elements, codeblocks, preformatted codes */
+  /* Styling for pre-formatted blocks, blockquotes & highlights */
   pre, code, blockquote, .blockquote {
-    background-color: #131f23 !important;
+    background-color: #091113 !important;
     color: #cbd5e1 !important;
-    border: 1px solid #283438 !important;
-    border-left: 4px solid #2f9bf0 !important;
+    border: 1px solid #111a1d !important;
+    border-left: 4px solid #38bdf8 !important;
     border-radius: 4px !important;
   }
   
-  /* Actionable buttons and pagination links */
+  /* Fully-curved buttons and pager transitions */
   .btn, .button, .read-more, .prev, .next, .pagination a {
-    background-color: #223035 !important;
-    color: #f2f4f5 !important;
-    border: 1px solid #2d3f44 !important;
+    background-color: #1e293b !important;
+    color: #f1f5f9 !important;
+    border: none !important;
     border-radius: 9999px !important;
     padding: 6px 16px !important;
     font-weight: 600 !important;
@@ -4427,8 +4432,7 @@ em {
   }
   
   .btn:hover, .button:hover, .read-more:hover, .prev:hover, .next:hover, .pagination a:hover {
-    background-color: #2a3d43 !important;
-    border-color: #3f5d66 !important;
+    background-color: #334155 !important;
     color: #ffffff !important;
   }
 }
