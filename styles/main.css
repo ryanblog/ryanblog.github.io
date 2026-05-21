@@ -4316,70 +4316,120 @@ em {
 
 /* DOCK_MINIMAL_DARK_OVERRIDE_START */
 @media (min-width: 0px) {
-  /* Elegant Minimalist Dark Theme Override for Gridea Theme One */
-  html, body {
-    background-color: #0d1117 !important;
-    background: #0d1117 !important;
-    color: #c9d1d9 !important;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+  /* Premium Minimalist Reddit-Inspired Dark Theme */
+  html, body, #app, .body, .layout, .page-container, .main-container {
+    background-color: #0b1416 !important;
+    background: #0b1416 !important;
+    color: #e5ebed !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   }
   
-  header, nav, footer, .footer, .header, .nav, .sidebar, .main, .content, .main-container {
-    background-color: #0d1117 !important;
-    background: #0d1117 !important;
-    border-color: #30363d !important;
+  /* Layout Headers, Nav, Sidebar, Footers */
+  header, nav, footer, .footer, .header, .nav, .sidebar, .menu-container, .navigation, .header-container {
+    background-color: #0b1416 !important;
+    background: #0b1416 !important;
+    border-color: #1a2325 !important;
   }
   
-  .post-item, .post-list-item, .list-inside, .border-b, hr, .hr, .header-container {
-    border-color: #21262d !important;
+  /* Post Card items / list containers (overrides rogue white boxes) */
+  .post-item, .post-list-item, .post, .card, article, section, .post-container, .post-item-wrapper, .post-card, .list-inside, .post-wrapper, .post-holder {
+    background-color: #152226 !important;
+    background: #152226 !important;
+    border: 1px solid #283438 !important;
+    border-color: #283438 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
   }
   
-  a, .link, .post-title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    color: #f0f6fc !important;
+  /* Post detail and main content backgrounds */
+  .post-detail, .post-content, .content, .main, .main-content {
+    background-color: #0b1416 !important;
+    background: #0b1416 !important;
+    color: #e5ebed !important;
+  }
+  
+  /* Typography rules (high-legibility soft contrast) */
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+  a, .link, .post-title, .post-title a {
+    color: #f2f4f5 !important;
     text-shadow: none !important;
   }
   
-  a:hover, .post-title:hover {
-    color: #58a6ff !important;
+  a:hover, .post-title:hover, .post-title a:hover {
+    color: #2f9bf0 !important;
     text-decoration: none !important;
   }
   
-  p, span, li, ul, ol, time, .date, .time, .time-tag, .post-meta, .post-info, .meta, .info, .description {
-    color: #8b949e !important;
+  p, span, li, ul, ol, time, .date, .time, .time-tag, .post-meta, .post-info, .meta, .info, .description, .publish-info {
+    color: #a5b1b5 !important;
   }
   
-  .tag, .tags, .category, .categories, .tag-pill, .badge {
-    background-color: #21262d !important;
-    color: #58a6ff !important;
-    border: 1px solid #30363d !important;
+  .post-meta, .post-info, .meta, .date, time {
+    color: #82959b !important;
   }
   
+  /* Navigation, tags & pills */
+  .tag, .tags, .category, .categories, .tag-pill, .badge, .tag-item {
+    background-color: #223035 !important;
+    color: #a5b1b5 !important;
+    border: 1px solid #2d3f44 !important;
+    border-radius: 4px !important;
+    padding: 2px 8px !important;
+    font-size: 0.75rem !important;
+  }
+  
+  /* Clean dividers */
+  .border-b, hr, .hr, .header-container, .footer-container {
+    border-color: #1a2325 !important;
+  }
+  
+  /* Form, search widgets and input controls */
+  input, textarea, select, .search-field, .search-input {
+    background-color: #152226 !important;
+    background: #152226 !important;
+    color: #f2f4f5 !important;
+    border: 1px solid #283438 !important;
+    border-radius: 9999px !important;
+    padding: 8px 16px !important;
+    outline: none !important;
+  }
+  
+  input::placeholder, .search-field::placeholder {
+    color: #82959b !important;
+  }
+  
+  /* Embedded elements & media */
   img, svg {
-    border-color: #30363d !important;
-    opacity: 0.95 !important;
+    border-color: #283438 !important;
+    opacity: 0.92 !important;
   }
   
+  /* Rich text elements, codeblocks, preformatted codes */
   pre, code, blockquote, .blockquote {
-    background-color: #161b22 !important;
-    color: #e6edf3 !important;
-    border-color: #30363d !important;
-    border-left: 4px solid #58a6ff !important;
+    background-color: #131f23 !important;
+    color: #cbd5e1 !important;
+    border: 1px solid #283438 !important;
+    border-left: 4px solid #2f9bf0 !important;
+    border-radius: 4px !important;
   }
   
+  /* Actionable buttons and pagination links */
   .btn, .button, .read-more, .prev, .next, .pagination a {
-    background-color: #21262d !important;
-    color: #c9d1d9 !important;
-    border: 1px solid #30363d !important;
-    border-radius: 6px !important;
-    padding: 6px 14px !important;
+    background-color: #223035 !important;
+    color: #f2f4f5 !important;
+    border: 1px solid #2d3f44 !important;
+    border-radius: 9999px !important;
+    padding: 6px 16px !important;
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
     transition: all 0.2s ease !important;
     display: inline-block !important;
   }
   
   .btn:hover, .button:hover, .read-more:hover, .prev:hover, .next:hover, .pagination a:hover {
-    background-color: #30363d !important;
-    color: #f0f6fc !important;
-    border-color: #8b949e !important;
+    background-color: #2a3d43 !important;
+    border-color: #3f5d66 !important;
+    color: #ffffff !important;
   }
 }
 /* DOCK_MINIMAL_DARK_OVERRIDE_END */
