@@ -4312,3 +4312,74 @@ em {
 .tag:hover {
   box-shadow: 0px 4px 5px 2px rgba(181, 181, 181, 0.22);
 }
+
+
+/* DOCK_MINIMAL_DARK_OVERRIDE_START */
+@media (min-width: 0px) {
+  /* Elegant Minimalist Dark Theme Override for Gridea Theme One */
+  html, body {
+    background-color: #0d1117 !important;
+    background: #0d1117 !important;
+    color: #c9d1d9 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+  }
+  
+  header, nav, footer, .footer, .header, .nav, .sidebar, .main, .content, .main-container {
+    background-color: #0d1117 !important;
+    background: #0d1117 !important;
+    border-color: #30363d !important;
+  }
+  
+  .post-item, .post-list-item, .list-inside, .border-b, hr, .hr, .header-container {
+    border-color: #21262d !important;
+  }
+  
+  a, .link, .post-title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #f0f6fc !important;
+    text-shadow: none !important;
+  }
+  
+  a:hover, .post-title:hover {
+    color: #58a6ff !important;
+    text-decoration: none !important;
+  }
+  
+  p, span, li, ul, ol, time, .date, .time, .time-tag, .post-meta, .post-info, .meta, .info, .description {
+    color: #8b949e !important;
+  }
+  
+  .tag, .tags, .category, .categories, .tag-pill, .badge {
+    background-color: #21262d !important;
+    color: #58a6ff !important;
+    border: 1px solid #30363d !important;
+  }
+  
+  img, svg {
+    border-color: #30363d !important;
+    opacity: 0.95 !important;
+  }
+  
+  pre, code, blockquote, .blockquote {
+    background-color: #161b22 !important;
+    color: #e6edf3 !important;
+    border-color: #30363d !important;
+    border-left: 4px solid #58a6ff !important;
+  }
+  
+  .btn, .button, .read-more, .prev, .next, .pagination a {
+    background-color: #21262d !important;
+    color: #c9d1d9 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px !important;
+    padding: 6px 14px !important;
+    transition: all 0.2s ease !important;
+    display: inline-block !important;
+  }
+  
+  .btn:hover, .button:hover, .read-more:hover, .prev:hover, .next:hover, .pagination a:hover {
+    background-color: #30363d !important;
+    color: #f0f6fc !important;
+    border-color: #8b949e !important;
+  }
+}
+/* DOCK_MINIMAL_DARK_OVERRIDE_END */
