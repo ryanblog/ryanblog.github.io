@@ -4343,23 +4343,113 @@ em {
     border-color: transparent !important;
   }
   
-  /* Post Card entries and lists styled with RGB 13, 17, 23 and cozy internal padding */
+  /* Translate Navigation Menus from Chinese to English elegantly via CSS pseudo-elements */
+  a[href="/"], a[href$="/"], a[href$="index.html"] {
+    font-size: 0 !important;
+  }
+  a[href="/"]::before, a[href$="/"]::before, a[href$="index.html"]::before {
+    content: "Home" !important;
+    font-size: 15px !important;
+    letter-spacing: 0.03em !important;
+    visibility: visible !important;
+    display: inline-block !important;
+    font-weight: 500 !important;
+  }
+  
+  a[href*="/archives"] {
+    font-size: 0 !important;
+  }
+  a[href*="/archives"]::before {
+    content: "Archives" !important;
+    font-size: 15px !important;
+    letter-spacing: 0.03em !important;
+    visibility: visible !important;
+    display: inline-block !important;
+    font-weight: 500 !important;
+  }
+  
+  a[href*="/tags"] {
+    font-size: 0 !important;
+  }
+  a[href*="/tags"]::before {
+    content: "Tags" !important;
+    font-size: 15px !important;
+    letter-spacing: 0.03em !important;
+    visibility: visible !important;
+    display: inline-block !important;
+    font-weight: 500 !important;
+  }
+  
+  a[href*="/about"], a[href*="/post/about"] {
+    font-size: 0 !important;
+  }
+  a[href*="/about"]::before, a[href*="/post/about"]::before {
+    content: "About" !important;
+    font-size: 15px !important;
+    letter-spacing: 0.03em !important;
+    visibility: visible !important;
+    display: inline-block !important;
+    font-weight: 500 !important;
+  }
+
+  /* Translate Pagination and Action Pagers */
+  .prev, [class*="prev-"] {
+    font-size: 0 !important;
+  }
+  .prev::before, [class*="prev-"]::before {
+    content: "Prev" !important;
+    font-size: 13px !important;
+    visibility: visible !important;
+    display: inline-block !important;
+  }
+
+  .next, [class*="next-"] {
+    font-size: 0 !important;
+  }
+  .next::before, [class*="next-"]::before {
+    content: "Next" !important;
+    font-size: 13px !important;
+    visibility: visible !important;
+    display: inline-block !important;
+  }
+
+  .read-more {
+    font-size: 0 !important;
+  }
+  .read-more::before {
+    content: "Read More" !important;
+    font-size: 13px !important;
+    visibility: visible !important;
+    display: inline-block !important;
+  }
+
+  /* Completely Hide Footer & Credits to remove 'Theme One, Powered by Gridea!' */
+  footer, .footer, .footer-info, .site-footer, .footer-container {
+    display: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+  
+  /* Post Card entries styled with premium, darker rgb(8, 12, 16) and cozy compact margins */
   .post-item, .post-list-item, .post, .card, article, section, .post-container, .post-item-wrapper, .post-card, .list-inside, .post-wrapper, .post-holder {
-    background-color: rgb(13, 17, 23) !important;
-    background: rgb(13, 17, 23) !important;
+    background-color: rgb(8, 12, 16) !important;
+    background: rgb(8, 12, 16) !important;
     border: none !important;
     border-color: transparent !important;
     border-radius: 8px !important;
     padding: 24px 28px !important;
-    margin-top: 12px !important;
-    margin-bottom: 36px !important;
+    margin-top: 4px !important;
+    margin-bottom: 20px !important;
     position: relative !important;
   }
   
-  /* Post detail content box - slightly lighter than the void body, same as post card */
+  /* Post detail content box - slightly lighter than void body, same as post card */
   .post-detail, .post-content, .content {
-    background-color: rgb(13, 17, 23) !important;
-    background: rgb(13, 17, 23) !important;
+    background-color: rgb(8, 12, 16) !important;
+    background: rgb(8, 12, 16) !important;
     border: none !important;
     border-color: transparent !important;
     border-radius: 8px !important;
@@ -4386,7 +4476,7 @@ em {
     color: #64748b !important;
   }
   
-  /* Sub-elements, tags, categorizations, and pills */
+  /* Sub-elements, tags, categorizations, and pills formatted closer to card background */
   .tag, .tags, .category, .categories, .tag-pill, .badge, .tag-item {
     background-color: rgb(22, 30, 35) !important;
     color: #94a3b8 !important;
@@ -4396,35 +4486,35 @@ em {
     font-size: 0.75rem !important;
   }
   
-  /* Divider lines shifted downwards to the middle of the gutter between cards and colored rgb(13, 17, 23) */
+  /* Divider lines shifted downwards to the middle of the gutter between cards and colored extremely faint slate (5% white opacity) */
   .post-item::after, .post-list-item::after {
     content: "" !important;
     display: block !important;
     position: absolute !important;
-    bottom: -18px !important;
+    bottom: -10px !important;
     left: 28px !important;
     right: 28px !important;
-    height: 1.5px !important;
-    background-color: rgb(13, 17, 23) !important;
-    background: rgb(13, 17, 23) !important;
+    height: 1px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
     border: none !important;
     box-shadow: none !important;
   }
 
   /* Sleek minimalist general dividers (header borders or separate lines) */
   .border-b, hr, .hr, .header-container, .footer-container {
-    border-color: rgb(13, 17, 23) !important;
-    border-bottom-color: rgb(13, 17, 23) !important;
-    margin-top: 18px !important;
-    margin-bottom: 18px !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.05) !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
   }
   
   /* Form inputs & search filters */
   input, textarea, select, .search-field, .search-input {
-    background-color: rgb(13, 17, 23) !important;
-    background: rgb(13, 17, 23) !important;
+    background-color: rgb(8, 12, 16) !important;
+    background: rgb(8, 12, 16) !important;
     color: #f1f5f9 !important;
-    border: 1px solid #111a1d !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
     border-radius: 9999px !important;
     padding: 8px 16px !important;
     outline: none !important;
@@ -4445,7 +4535,7 @@ em {
   pre, code, blockquote, .blockquote {
     background-color: #091113 !important;
     color: #cbd5e1 !important;
-    border: 1px solid #111a1d !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
     border-left: 4px solid #38bdf8 !important;
     border-radius: 4px !important;
   }
